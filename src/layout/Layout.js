@@ -10,6 +10,8 @@ import redTheme from "./redTheme"
 import whiteTheme from "./whiteTheme"
 
 const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
 		*, *::before, *::after {
 			box-sizing: border-box;
 		}
