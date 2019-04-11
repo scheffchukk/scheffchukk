@@ -8,6 +8,7 @@ const List = styled.ul`
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 
   padding: 0;
 `
