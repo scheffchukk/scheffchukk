@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Helmet } from "react-helmet"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 
 import "animate.css"
@@ -54,6 +55,17 @@ export default class extends Component {
     return (
       <ThemeProvider theme={isRed ? redTheme : whiteTheme}>
         <>
+          <Helmet>
+            <meta charset="utf-8" />
+            <meta
+              name="description"
+              content="Dmitro Szewczuk - Young Fullstack web developer"
+            />
+            <title>scheffchuk</title>
+
+            <html lang="en" />
+          </Helmet>
+
           <GlobalStyle />
           <Header onClick={() => this.toggleNavigation()} />
           <Navigation

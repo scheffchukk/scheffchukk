@@ -12,7 +12,7 @@ import HyperText from "../HyperText"
 
 const links = [
   {
-    text: "Main",
+    text: "Start",
     to: "/",
   },
   {
