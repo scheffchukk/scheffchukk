@@ -10,17 +10,19 @@ export default class extends Component {
     hover: false,
   }
 
+  toggleHover = () => {
+    this.setState(prevState => ({ hover: !prevState.hover }))
+  }
+
   render() {
     const { link, image, name, technologies } = this.props.info
     return (
       <a href={link}>
         <Wrapper
-          onMouseEnter={() => {
-            this.setState({ hover: true })
-          }}
-          onMouseLeave={() => {
-            this.setState({ hover: false })
-          }}
+          onMouseEnter={this.toggleHover}
+          onMouseLeave={this.toggleHover}
+          onTouchStart={this.toggleHover}
+          onTouchEnd={this.toggleHover}
         >
           <Background src={withPrefix(image)} hovered={this.state.hover} />
           <Text hovered={this.state.hover}>
