@@ -7,8 +7,8 @@ const Navigation = styled.nav`
   top: 0;
   left: 0;
 
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
   background: ${({ theme: { colors } }) => colors.secondary};
   color: ${({ theme: { colors } }) => colors.primary};
