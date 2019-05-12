@@ -9,15 +9,15 @@ import Button from "../components/Button"
 export default () => (
   <>
     <Layout>
-      <Paragraph className="animated bounceInDown">
-        My name is Dmitro Szewczuk, <br /> I'm young, 17 years old full-stack
-        web developer. <br />
-        Programming is my passion, in which I'm good at. <br />
-        Despite my young age, I have long programming experience. <br />
-        <br />I want to help people by my passion. <br /> Check what can I do
+      <Paragraph>
+        My name is Dmitro Szewczuk, <br /> I'm a 17 years old full-stack web
+        developer. <br />
+        Programming is my passion, at which I'm really good. <br />
+        Despite my young age, I have a long programming experience. <br />
+        <br />I want to help people by my passion. <br /> Check what I can do
         for you!
       </Paragraph>
-      <Link to="/offer/" className="animated bounceInLeft">
+      <Link to="/offer/">
         <Button>My offer</Button>
       </Link>
     </Layout>

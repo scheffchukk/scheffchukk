@@ -72,9 +72,7 @@ export default class extends Component {
             navigationToggled={this.state.navigationToggled}
             onClick={() => this.toggleNavigation()}
           />
-          <Wrapper className={isRed ? "animated fadeInLeft" : ""}>
-            {children}
-          </Wrapper>
+          <Wrapper className="animated fadeInLeft">{children}</Wrapper>
         </>
       </ThemeProvider>
     )

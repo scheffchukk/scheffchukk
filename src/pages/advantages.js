@@ -45,12 +45,12 @@ const advantages = [
 export default () => (
   <>
     <Layout>
-      <Container className="animated fadeInLeft">
+      <Container>
         {advantages.map(data => (
           <AdvantagePill data={data} key={data.text} />
         ))}
       </Container>
-      <Link to="/projects/" className="animated fadeInUp">
+      <Link to="/projects/">
         <Button>My projects</Button>
       </Link>
     </Layout>

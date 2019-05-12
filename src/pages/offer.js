@@ -34,12 +34,12 @@ const offer = [
 export default () => (
   <>
     <Layout isRed>
-      <Container className="animated bounceInLeft delay-2s">
+      <Container>
         {offer.map(data => (
           <OfferPill data={data} key={data.text} />
         ))}
       </Container>
-      <Link to="/advantages/" className="animated bounceInDown delay-1s">
+      <Link to="/advantages/">
         <Button>My advantages</Button>
       </Link>
     </Layout>

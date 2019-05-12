@@ -27,7 +27,7 @@ const contacts = [
 export default () => (
   <>
     <Layout>
-      <Wrapper className="animated bounceInDown">
+      <Wrapper>
         {contacts.map(contact => (
           <HyperText
             href={contact.hyperlink}

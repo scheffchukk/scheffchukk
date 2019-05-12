@@ -9,7 +9,7 @@ import Button from "../components/Button"
 export default () => (
   <>
     <Layout isRed>
-      <Paragraph className="animated bounceInDown delay-1s">
+      <Paragraph>
         I love people, <br />
         I love working with people, <br />
         And I love solving people's problems.
@@ -17,7 +17,7 @@ export default () => (
         <br />
         What problem can I solve for you?
       </Paragraph>
-      <Link to="/about/" className="animated bounceInLeft delay-2s">
+      <Link to="/about/">
         <Button>Who am I?</Button>
       </Link>
     </Layout>

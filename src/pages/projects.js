@@ -13,17 +13,23 @@ const projects = [
     link: "/",
     image: "portfolio.png",
   },
+  {
+    name: "IN PROGRESS",
+    technologies: "",
+    link: "",
+    image: "mama.png",
+  },
 ]
 
 export default () => (
   <>
     <Layout isRed>
-      <div className="animated bounceInDown delay-1s">
+      <div>
         {projects.map(element => (
           <Project info={element} key={element.name} />
         ))}
       </div>
-      <Link to="/contact/" className="animated bounceInLeft delay-2s">
+      <Link to="/contact/">
         <Button>Contact with me!</Button>
       </Link>
     </Layout>
